@@ -8,8 +8,8 @@ def get_broforce_window():
     else:
         return (0, 0, -1, -1)
 
-def get_pixel_batch(pixel_list):
-    screen = ImageGrab.grab()
+def get_pixel_batch(pixel_list, box):
+    screen = ImageGrab.grab(bbox = box)
     color_data = []
 
     for pixel in pixel_list:

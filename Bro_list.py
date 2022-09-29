@@ -14,9 +14,9 @@ class Character_handler:
         pixel_list = []
         for Bros in self.character_objects:
             for pixel_set in Bros.pixel_identifiers:
-                pixel_list.append([pixel_set[0][0],pixel_set[0][1]+900])
+                pixel_list.append([pixel_set[0][0],pixel_set[0][1]])
 
-        color_pixel_set = get_pixel_batch(pixel_list)
+        color_pixel_set = get_pixel_batch(pixel_list,(0, 900, 100, 1037))
         n = 0
         for Bro in self.character_objects:
             correct_pixels = 0
