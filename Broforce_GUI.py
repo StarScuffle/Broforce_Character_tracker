@@ -17,12 +17,15 @@ mainmenu.add_command(label = "Find Broforce", command = find_broforce_window)
 root.config(menu = mainmenu)
 
 display_text = StringVar()
-mass_bro_string = ''
-bros = get_brolist()
-for b in bros:
-    mass_bro_string += b + '\n'
+bro_display_string = ''
 
-display_text.set(mass_bro_string)
+display_text.set(bro_display_string)
 display = Label(root, textvariable=display_text, justify=LEFT)
 display.pack()
 
+def update_brolist(brolist):
+    string_temp_holder = ''
+    for bros in brolist:
+        string_temp_holder += bros + '/n'
+
+    display_text.set(string_temp_holder)
