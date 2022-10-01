@@ -13,8 +13,6 @@ at least 800MB of storage space
 
 a 1080p screen for Broforce to be played in fullscreen mode on (I plan to update for different resolutions in the future)
 
-Due to the way the system works currently you'll likely need a second monitor to see the program this'll be one of the first things I go about fixing
-
 Broforce must be run on your main monitor as currently that's the only location the program looks at
 
 Nothing can be blocking the character icon in the bottom left of the screen and that's how the program identifies which character has been rolled
@@ -27,8 +25,6 @@ Run Main.exe and a command terminal should show up
 
 Simply launch Broforce and load up any game
 
-Once your character is onscreen you should see something along the lines of
+A simple user interface should pop up with a list of numbers from 1 to 35
 
-"Current Bro is [InsertaBro]"
-
-Keep playing the game and after 28 rolls the program will display the 8 characters currently rollable
+after rolling your first bro the list should update to show all characters and will update roll order when you get a new character
